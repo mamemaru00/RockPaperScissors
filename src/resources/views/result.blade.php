@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="jp">
+@extends('layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>結果発表</title>
-</head>
+@section('title', '結果発表')
 
-<body>
+@section('content')
     <div style="text-align: center;">
         <h1 style="margin: 5%;">結果発表</h1>
     </div>
@@ -34,7 +28,7 @@
             <td style="text-align: center;">
                 <img style="width: 60%; cursor: pointer;" src="{{ asset('img/1501948.jpg') }}" alt="">
             </td>
-            <td style="width: 20%; font-size: 500%; font-size: 500%; text-align: center;">
+            <td style="width: 20%; font-size: 500%; text-align: center;">
                 <p>勝利！！</p>
             </td>
             <td style="text-align: center;">
@@ -42,6 +36,7 @@
             </td>
         </tr>
     </table>
-</body>
-
-</html>
+    <div style="text-align: center;">
+        <button style="width: 15%; font-size: 200%;">戻る</button>
+    </div>
+@endsection
