@@ -10,4 +10,9 @@ class JankenJudgeController extends Controller
     {
         return view('index');
     }
+
+    public function result() 
+    {
+        return view('result');
+    }
 }

@@ -10,6 +10,7 @@ Route::get('/', function () {
 // hello world画面の表示
 Route::controller(JankenJudgeController::class)->group(function () {
     Route::get('/index', 'index');
+    Route::get('/result', 'result');
 });
 
 // Route::get('/hello', function () {
