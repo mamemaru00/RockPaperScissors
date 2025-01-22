@@ -1,0 +1,32 @@
+.index-container {
+    text-align: center;
+}
+
+.janken-title {
+    margin: 5%;
+}
+
+.janken-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.janken-image {
+    width: 60%;
+    cursor: pointer;
+}
+
+.history-button {
+    font-size: 200%;
+    margin: 5%;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.history-button:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+}
