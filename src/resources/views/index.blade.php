@@ -3,23 +3,25 @@
 @section('title', 'ホーム')
 
 @section('content')
-    <div style="text-align: center;">
-        <h1 style="margin: 5%;">ジャンケンを始めましょう！！</h1>
-        <div style="display: flex; justify-content: space-around;">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+
+    <div class="index-container">
+        <h1 class="janken-title">ジャンケンを始めましょう！！</h1>
+
+        <div class="janken-images">
             <div>
-                <img style="width: 60%; cursor: pointer;" src="{{ asset('img/1501948.jpg') }}" alt="">
+                <img class="janken-image" src="{{ asset('img/1501948.jpg') }}" alt="グー">
             </div>
             <div>
-                <img style="width: 60%; cursor: pointer;" src="{{ asset('img/1501947.jpg') }}" alt="">
+                <img class="janken-image" src="{{ asset('img/1501947.jpg') }}" alt="チョキ">
             </div>
             <div>
-                <img style="width: 60%; cursor: pointer;" src="{{ asset('img/1501953.jpg') }}" alt="">
+                <img class="janken-image" src="{{ asset('img/1501953.jpg') }}" alt="パー">
             </div>
         </div>
+
         <div>
-            <button style="font-size: 200%; margin: 5%; color: white; background-color: black; border-radius: 5px;">
-                対戦履歴
-            </button>
+            <button class="history-button">対戦履歴</button>
         </div>
     </div>
 @endsection
