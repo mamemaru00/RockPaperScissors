@@ -7,12 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// hello world画面の表示
 Route::controller(JankenJudgeController::class)->group(function () {
-    Route::get('/index', 'index');
-    Route::get('/result', 'result');
+    Route::get('/index', 'index')->name('index');
+    Route::get('/result', 'result')->name('result');
 });
-
-// Route::get('/hello', function () {
-//     return 'HELLO WORLD!!';
-// });

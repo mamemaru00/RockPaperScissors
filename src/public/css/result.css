@@ -22,7 +22,7 @@
 
 .player-area,
 .cpu-area {
-    background: darkgray;
+    background: #9cc;
     width: 50%;
     display: flex;
     justify-content: center;

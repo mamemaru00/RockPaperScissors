@@ -10,13 +10,19 @@
 
         <div class="janken-images">
             <div>
-                <img class="janken-image" src="{{ asset('img/1501948.jpg') }}" alt="グー">
+                <a href="{{ route('result', ['hand' => 0]) }}">
+                    <img class="janken-image" src="{{ asset('img/1501948.jpg') }}" alt="グー">
+                </a>
             </div>
             <div>
-                <img class="janken-image" src="{{ asset('img/1501947.jpg') }}" alt="チョキ">
+                <a href="{{ route('result', ['hand' => 1]) }}">
+                    <img class="janken-image" src="{{ asset('img/1501947.jpg') }}" alt="チョキ">
+                </a>
             </div>
             <div>
-                <img class="janken-image" src="{{ asset('img/1501953.jpg') }}" alt="パー">
+                <a href="{{ route('result', ['hand' => 2]) }}">
+                    <img class="janken-image" src="{{ asset('img/1501953.jpg') }}" alt="パー">
+                </a>
             </div>
         </div>
 
