@@ -31,7 +31,6 @@ class JankenJudgeController extends Controller
             $result = '負け！！';
         }
 
-        // 勝敗のデータをデータベースに登録する
         $history = new history();
         $history->user_hand = $userHand;
         $history->cpu_hand = $cpuHand;

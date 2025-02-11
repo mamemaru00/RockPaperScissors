@@ -27,7 +27,7 @@
         </div>
 
         <div>
-            <button class="history-button">対戦履歴</button>
+            <button class="history-button" onclick="location.href='{{ route('historyShow') }}'">対戦履歴</button>
         </div>
     </div>
 @endsection
