@@ -6,6 +6,7 @@
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/result.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
 
     <div class="result-container">
         <h1 class="result-title">結果発表</h1>

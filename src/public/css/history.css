@@ -1,0 +1,4 @@
+.history-space {
+    display: flex;
+    justify-content: space-evenly;
+}
