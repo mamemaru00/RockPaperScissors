@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\history;
 
 class JankenJudgeController extends Controller
 {
@@ -29,6 +30,13 @@ class JankenJudgeController extends Controller
         } else {
             $result = '負け！！';
         }
+
+        $history = new history();
+        $history->user_hand = $userHand;
+        $history->cpu_hand = $cpuHand;
+        $history->result = $result;
+        $history->save();
+ 
     
         return view('result', compact('result', 'userHand', 'cpuHand'));
     }
